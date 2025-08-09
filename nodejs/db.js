@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mydatabase',(err) =>{
-    if(!err){
-        console.log("mongodb connection successful")
-    }else
-    {
-        console.log("Error in DB connection: " + JSON.stringify(err, undefined, 2));
-    }
+mongoose.connect('mongodb://localhost:27017/CRUD/mydatabase')
+
+.then(() => {
+    console.log('database connected successfully.') 
+})
+
+.catch(err => {
+    console.error('database connection error:', err);
 });
-module.export = mongoose
+
+module.exports = mongoose;
