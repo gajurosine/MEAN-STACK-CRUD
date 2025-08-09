@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/CRUD/mydatabase')
+mongoose.connect('mongodb://localhost:27017/CRUDB')
 
 .then(() => {
-    console.log('database connected successfully.') 
+    console.log('database connected successfully....') 
 })
 
 .catch(err => {
